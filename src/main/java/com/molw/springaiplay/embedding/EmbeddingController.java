@@ -15,13 +15,13 @@ public class EmbeddingController {
         TransformersEmbeddingClient embeddingClient = new TransformersEmbeddingClient();
 
         // (optional) defaults to classpath:/onnx/all-MiniLM-L6-v2/tokenizer.json
-        embeddingClient.setTokenizerResource("classpath:/onnx/all-MiniLM-L6-v2/tokenizer.json");
+        //embeddingClient.setTokenizerResource("classpath:/onnx/all-MiniLM-L6-v2/tokenizer.json");
         // (optional) defaults to classpath:/onnx/all-MiniLM-L6-v2/model.onnx
-        embeddingClient.setModelResource("classpath:/onnx/all-MiniLM-L6-v2/model.onnx");
+        //embeddingClient.setModelResource("classpath:/onnx/all-MiniLM-L6-v2/model.onnx");
 
         // (optional) defaults to ${java.io.tmpdir}/spring-ai-onnx-model
         // Only the http/https resources are cached by default.
-        embeddingClient.setResourceCacheDirectory("/tmp/onnx-zoo");
+        //embeddingClient.setResourceCacheDirectory("/tmp/onnx-zoo");
 
         embeddingClient.afterPropertiesSet();
 
