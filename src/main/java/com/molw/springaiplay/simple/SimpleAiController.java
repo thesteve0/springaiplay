@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class SimpleAiController {
 
-    private final AiClient aiClient;
+   /* private final AiClient aiClient;
 
     @Autowired
     public SimpleAiController(AiClient aiClient) {
@@ -19,5 +19,5 @@ public class SimpleAiController {
     @GetMapping("/ai/simple")
     public Completion completion(@RequestParam(value = "message", defaultValue = "Tell me a joke") String message) {
         return new Completion(aiClient.generate(message));
-    }
+    }*/
 }
